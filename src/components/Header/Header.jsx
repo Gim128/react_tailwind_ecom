@@ -7,7 +7,7 @@ import { IconButton } from "@mui/material";
 
 const Header = () => {
     return (
-        <header className="fixed top-0 left-0 z-[100] w-full p-5 bg-my-background flex items-center justify-between drop-shadow-header-shadow">
+        <header className="fixed top-0 left-0 z-[100] w-full p-5 bg-my-background flex items-center justify-between drop-shadow-header-shadow py-5 px-2">
             {/* header left */}
             <div className="flex items-center">
                 <IconButton sx={{color: "red"}}>
