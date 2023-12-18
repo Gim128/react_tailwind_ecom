@@ -20,7 +20,7 @@ const Header = () => {
                 <h1 className="ml-2 text-sm font-semibold">Leo <span className="text-[#c82196]">D Mall</span></h1>
                 <div className="overflow-hidden ml-2 flex items-center rounded-full bg-[#f1e6e6]">
                     <input type="text" placeholder="iphone"
-                    className="outline-none p-2 font-semibold text-sm w-[200px] bg-inherit"
+                    className="hidden sm:inline-block outline-none p-2 font-semibold text-sm w-[200px] bg-inherit"
                     />
                     <IconButton>
                         <SearchIcon className='text-gray-400'/>
