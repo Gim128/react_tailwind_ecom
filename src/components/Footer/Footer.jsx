@@ -7,9 +7,9 @@ import {IconButton} from "@mui/material";
 const Footer = () => {
     return <footer className="fixed bottom-0 left-0 z-[100] w-full py-3 px-2 bg-my-background flex items-center justify-between
     drop-shadow-header-shadow">
-        <FooterIcon Icon={HomeOutlinedIcon} />
-        <FooterIcon Icon={CategoryOutlinedIcon} />
-        <FooterIcon Icon={AccountCircleOutlinedIcon} />
+        <FooterIcon Icon={HomeOutlinedIcon} iconTex='Home' />
+        <FooterIcon Icon={CategoryOutlinedIcon}  iconTex='Categories' />
+        <FooterIcon Icon={AccountCircleOutlinedIcon}  iconTex='Profile' />
 
     </footer>
 }
@@ -24,7 +24,7 @@ const FooterIcon = ({Icon})=>
             color: "red"
         }}
     >
-        <div>
+        <div className="text-[#c82196]">
             <Icon />
             <p className="text-xl">Home</p>
         </div>
