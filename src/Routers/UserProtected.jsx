@@ -4,7 +4,7 @@ const UserProtected = () => {
 
     const user = false;
 
-    return user?<Outlet />:
+    return user ? <Outlet />:
         <Navigate to='/login' />
 }
 
