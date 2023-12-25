@@ -5,18 +5,18 @@ import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined
 import {IconButton} from "@mui/material";
 
 const Footer = () => {
-    return <footer className="fixed bottom-0 left-0 z-[100] w-full py-3 px-2 bg-my-background flex items-center justify-between
+    return <footer className="fixed bottom-0 left-0 z-[100] w-full p-3 bg-my-background flex items-center justify-between
     drop-shadow-header-shadow">
-        <FooterIcon Icon={HomeOutlinedIcon} iconTex='Home' />
-        <FooterIcon Icon={CategoryOutlinedIcon}  iconTex='Categories' />
-        <FooterIcon Icon={AccountCircleOutlinedIcon}  iconTex='Profile' />
+        <FooterIcon Icon={HomeOutlinedIcon} iconText ='Home' />
+        <FooterIcon Icon={CategoryOutlinedIcon}  iconText ='Categories' />
+        <FooterIcon Icon={AccountCircleOutlinedIcon}  iconText ='Profile' />
 
     </footer>
 }
 
 export default Footer;
 
-const FooterIcon = ({Icon})=>
+const FooterIcon = ({Icon, iconText})=>
     <IconButton
         sx={{
             padding: "4px",
@@ -24,8 +24,8 @@ const FooterIcon = ({Icon})=>
             color: "red"
         }}
     >
-        <div className="text-[#c82196]">
+        <div className="text-gray-700 hover: text-[#c82196] transition-all duration-700">
             <Icon />
-            <p className="text-xl">Home</p>
+            <p className="text-xs font-semibold">{iconText}</p>
         </div>
     </IconButton>
