@@ -20,6 +20,7 @@ const FooterIcon = ({Icon, iconText})=>
     <IconButton
         sx={{
             padding: "4px",
+            paddingTop: "0",
             borderRadius: "5px",
             color: "red"
         }}
